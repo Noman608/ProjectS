@@ -49,9 +49,7 @@ class App extends Component {
               </div>
               <div className="container-fluid">
                 <ul className="list-unstyled row m-5">
-                  {this.state.items.map((value, i) => {
-                    return <Plan value={value} key={i} id={i} sendData={this.handleDelete}/>;
-                  })}
+                 <Plan p={this.state.items} sendData={this.handleDelete}/>
                 </ul>
               </div>
             </div>
