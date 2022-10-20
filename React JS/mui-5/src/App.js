@@ -1,22 +1,17 @@
 import React from "react";
-import Fab from '@mui/material/Fab';
-import AddIcon from '@mui/icons-material/Add';
-import EditIcon from '@mui/icons-material/Edit';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import NavigationIcon from '@mui/icons-material/Navigation';
+// import ComponentC from "./ComponentC";
+import CounterThree from "./Components/CounterThree";
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 function App() {
   return (
     <React.Fragment>
-      <h1>Floating Action Button </h1>
-      <Fab disabled aria-label="like">
-        <FavoriteIcon />
-      </Fab>
-
-      ---------
-      <Fab variant="extended" color="success">
-        <NavigationIcon sx={{ mr: 1 }} />
-        Navigate
-      </Fab>
+      {/* <UserContext.Provider value={"Noman"}>
+        <ChannelContext.Provider value={'Some-Thing '} >
+          <ComponentC />
+        </ChannelContext.Provider>
+      </UserContext.Provider> */}
+      <CounterThree/>
     </React.Fragment>
   );
 }
